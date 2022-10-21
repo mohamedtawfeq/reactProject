@@ -1,0 +1,73 @@
+.card1 {
+  text-align: center;
+  width: 150px;
+  height: 40px;
+  background: #2f2e27;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  border-radius: 10px;
+}
+.scanner h1 {
+  color: transparent;
+  font-size: 1.4rem;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  animation: 2s;
+}
+
+.scanner h1::before {
+  content: "Messages ❤";
+  position: absolute;
+  text-shadow: 1px 0px 4px #d67900;
+
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-right: 4px solid #ffd300;
+  overflow: hidden;
+  color: #ffd300;
+  animation: load91371 3s linear infinite;
+}
+
+@keyframes load91371 {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+
+  10%,
+  20%,
+  30%,
+  40%,
+  50%,
+  60%,
+  70%,
+  80%,
+  90%,
+  100% {
+    border-right-color: transparent;
+  }
+
+  11%,
+  21%,
+  31%,
+  41%,
+  51%,
+  61%,
+  71%,
+  81%,
+  91% {
+    border-right-color: #ffd300;
+  }
+
+  60%,
+  80% {
+    width: 100%;
+  }
+}
